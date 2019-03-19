@@ -36,7 +36,7 @@ def getNode(A, B):
             iterB = iterB.next
     
     """when length same, starting to comparing linked list one by one until match."""
-    """after first node match,all rest linked list will be same"""
+    """after first node match,all rest linked list will be same """
     
     while iterA != iterB:
         iterA =iterA.next
