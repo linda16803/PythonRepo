@@ -26,12 +26,17 @@ def getNode(A, B):
     
     print(lenA)
     print(lenB)
+    """LinkedList ignor difference part from beginning for longer list"""
+    
     if lenA > lenB:
         for _ in range(lenA-lenB):
             iterA = iterA.next
     else:
         for _ in range(lenB-lenA):
             iterB = iterB.next
+    
+    """when length same, starting to comparing linked list one by one until match."""
+    """after first node match,all rest linked list will be same"""
     
     while iterA != iterB:
         iterA =iterA.next
